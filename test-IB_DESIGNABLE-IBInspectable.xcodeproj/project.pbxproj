@@ -14,6 +14,8 @@
 		45316A601AB31BEB00C45965 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45316A5F1AB31BEB00C45965 /* Images.xcassets */; };
 		45316A631AB31BEB00C45965 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45316A611AB31BEB00C45965 /* LaunchScreen.xib */; };
 		45316A6F1AB31BEB00C45965 /* test_IB_DESIGNABLE_IBInspectableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45316A6E1AB31BEB00C45965 /* test_IB_DESIGNABLE_IBInspectableTests.m */; };
+		45316A7B1AB31C6400C45965 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45316A7A1AB31C6400C45965 /* TestView.m */; };
+		45E335BC1AB3426C00617942 /* ViewSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E335BB1AB3426C00617942 /* ViewSon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		45316A681AB31BEB00C45965 /* test-IB_DESIGNABLE-IBInspectableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test-IB_DESIGNABLE-IBInspectableTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45316A6D1AB31BEB00C45965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45316A6E1AB31BEB00C45965 /* test_IB_DESIGNABLE_IBInspectableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test_IB_DESIGNABLE_IBInspectableTests.m; sourceTree = "<group>"; };
+		45316A791AB31C6400C45965 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		45316A7A1AB31C6400C45965 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		45E335BA1AB3426C00617942 /* ViewSon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewSon.h; sourceTree = "<group>"; };
+		45E335BB1AB3426C00617942 /* ViewSon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSon.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				45316A571AB31BEB00C45965 /* AppDelegate.m */,
 				45316A591AB31BEB00C45965 /* ViewController.h */,
 				45316A5A1AB31BEB00C45965 /* ViewController.m */,
+				45316A781AB31C2C00C45965 /* Custom Components */,
 				45316A5C1AB31BEB00C45965 /* Main.storyboard */,
 				45316A5F1AB31BEB00C45965 /* Images.xcassets */,
 				45316A611AB31BEB00C45965 /* LaunchScreen.xib */,
@@ -117,6 +124,17 @@
 				45316A6D1AB31BEB00C45965 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45316A781AB31C2C00C45965 /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				45316A791AB31C6400C45965 /* TestView.h */,
+				45316A7A1AB31C6400C45965 /* TestView.m */,
+				45E335BA1AB3426C00617942 /* ViewSon.h */,
+				45E335BB1AB3426C00617942 /* ViewSon.m */,
+			);
+			name = "Custom Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45316A7B1AB31C6400C45965 /* TestView.m in Sources */,
 				45316A5B1AB31BEB00C45965 /* ViewController.m in Sources */,
 				45316A581AB31BEB00C45965 /* AppDelegate.m in Sources */,
 				45316A551AB31BEB00C45965 /* main.m in Sources */,
+				45E335BC1AB3426C00617942 /* ViewSon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "test-IB_DESIGNABLE-IBInspectable/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "test-IB_DESIGNABLE-IBInspectable/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +434,7 @@
 				45316A741AB31BEB00C45965 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45316A751AB31BEB00C45965 /* Build configuration list for PBXNativeTarget "test-IB_DESIGNABLE-IBInspectableTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +443,7 @@
 				45316A771AB31BEB00C45965 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
